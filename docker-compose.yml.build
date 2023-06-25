@@ -1,0 +1,12 @@
+version : "3"
+services:
+  web1:
+#    image: "quote-gen-service:latest"
+    build: ./quote_gen
+    ports:
+      - "5000-5004:5000"
+  web2:
+#    image: "quote-disp-service:latest"
+    build: ./quote_disp
+    ports:
+      - "5006-5010:5010"
